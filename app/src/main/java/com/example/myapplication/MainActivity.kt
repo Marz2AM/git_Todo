@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         val randomTextView = findViewById<TextView>(R.id.textViewRandom)
 
         // TODO("if문 사용해보기 - 위에서 2개의 변수를 작성완료하고 나면 textView의 값과 randomTextView의 값이 같은지 다른지를 확인하여 Toast 띄우기")
-        if (textView == randomTextView) {
+        if (textView.text == randomTextView.text) {
             Toast.makeText(this, "정답입니다", Toast.LENGTH_SHORT).show()
         } else Toast.makeText(this, "틀렸습니다", Toast.LENGTH_SHORT).show()
         /**
